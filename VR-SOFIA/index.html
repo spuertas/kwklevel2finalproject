@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <script src='https://aframe.io/releases/0.8.0/aframe.min.js'></script>
+  </head>
+  <body>
+        <a-assets>
+                <img id="sky" src="sky2.png">
+                <img id="pavement" src="pavement.jpg">
+                <!--<img id="grass" src="grass.pn">-->
+        </a-assets>
+    <a-scene>
+        <a-camera position="0 2 3">
+                <a-cursor></a-cursor>
+        </a-camera>
+        <a-plane src="#pavement" position="0 0 -3.5" rotation="-90 0 0" width="4.5" height="100000" color="#6a6270"></a-plane>
+        <a-plane position="0 -.2 -3.5" rotation="-90 0 0" width="50" height="100000" color="green"></a-plane>
+        <!--<a-sky color = "powderblue" scale=""></a-sky>-->
+        <a-sky src="#sky"></a-sky>
+        <!-- <a-sphere position="3.306 1 -11.6" rotation="0 0 0"></a-sphere>
+        <a-sphere position="3.306 1 -11.6" rotation='0 0 0'>
+                <a-animation attribute="position" dur="20000" from="3.306 1 -11.6" to="3.306 1 200" repeat="indefinite"></a-animation>
+        </a-sphere> -->
+        <!--<a-box position="2.709 1 -30.2" rotation="0 0 0" height="10" depth="7" color="pink">-->
+        <!--        <a-animation attribute="position" dur="25000" from="2.709 1 -30.2" to="3.306 1 200" repeat="indefinite"></a-animation> <!---/*makes it move automatically*/-->-->
+        <!--</a-box>-->
+        <!--<a-box position="2.709 1 -23.4" rotation="0 0 0" height="10" depth="7" color="green">-->
+        <!--        <a-animation attribute="position" dur="25000" from="2.709 1 -23.4" to="3.306 1 200" repeat="indefinite"></a-animation>-->
+        <!--</a-box>-->
+        <!--<a-box position="2.709 1 -16.7" rotation="0 0 0" height="10" depth="7" color="blue">-->
+        <!--        <a-animation attribute="position" dur="25000" from="2.709 1 -16.7" to="3.306 1 200" repeat="indefinite"></a-animation>-->
+        <!--</a-box>-->
+        <!--<a-box position="2.709 1 -10.3" rotation="0 0 0" height="10" depth="7" color="yellow">-->
+        <!--        <a-animation attribute="position" dur="25000" from="2.709 1 -10.3" to="3.306 1 200" repeat="indefinite"></a-animation>-->
+        <!--</a-box>-->
+        <!--<a-box position="-2.709 1 -20.44" rotation="0 0 0" height="10" depth="15" color="pink">-->
+        <!--        <a-animation attribute="position" dur="25000" from="-2.709 1 -20.44" to="3.306 1 200" repeat="indefinite"></a-animation>-->
+        <!--</a-box>-->
+        <!-- <a-box position="2.79 1 9.755" rotation="0 0 0" height="10" depth="7" color="green">
+                <a-animation attribute="position" dur="20000" from="2.79 1 9.755" to="3.306 1 200" repeat="indefinite"></a-animation>
+        </a-box>
+        <a-box position="2.709 1 -16.7" rotation="0 0 0" height="10" depth="7" color="blue">
+                <a-animation attribute="position" dur="20000" from="2.709 1 -16.7" to="3.306 1 200" repeat="indefinite"></a-animation>
+        </a-box>
+        <a-box position="2.709 1 -10.3" rotation="0 0 0" height="10" depth="7" color="yellow">
+                <a-animation attribute="position" dur="20000" from="2.709 1 -10.3" to="3.306 1 200" repeat="indefinite"></a-animation>
+        </a-box> -->
+        <a-entity>
+                <a-gltf-model src="eiffel_tower/scene.gltf" position = "-6.02 0.302 -16.5" scale = "1 1 1">
+                        <a-animation attribute="position" dur="180000" from="-6.02 0.302 -16.5" to="-6.02 0.302 200" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+        </a-entity>
+        <a-entity>
+                <a-gltf-model src="cinderella_castle_-_toshueyi/scene.gltf" position = "10.82 0.302 -27" scale = ".004 .004 .004">
+                        <a-animation attribute="position" dur="182000" from="10.82 0.302 -27" to="10.82 0.302 200" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+        </a-entity>
+        <a-entity>
+                <a-gltf-model src="flower/scene.gltf" material = "flower/textures/Material_0_baseColor.jpeg" position = "3.234 1 -13.4" scale = ".160 .170 .050" rotation = ".000 .000 .000">
+                        <a-animation attribute="position" dur="70000" from="3.234 1 -13.4" to="-6.02 0.302 200" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+        </a-entity>
+        <a-entity>
+                <a-gltf-model src="tower/scene.gltf" material = "tower/textures/color_baseColor.png" position = "5.149 1 -35.1" scale = ".65 .65 .65" rotation = ".000 .000 .000">
+                        <a-animation attribute="position" dur="182000" from="5.149 1 -35.1" to="5.149 1 200" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+        </a-entity>
+        <a-entity>
+                <a-gltf-model src="pyramide_du_louvre_mini/scene.gltf" position = "-20.2 0 -35.5" scale = ".4 .4 .4" rotation = ".000 .000 .000">
+                        <a-animation attribute="position" dur="182000" from="-20.2 0 -35.5" to="-20.2 0 200" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+        </a-entity>
+        <!--<a-entity>-->
+        <!--        <a-gltf-model src="restaurant/scene.gltf" position = "-6.02 0.302 -16.5" scale = "1 1 1">-->
+        <!--                <a-animation attribute="position" dur="70000" from="-6.02 0.302 -16.5" to="-6.02 0.302 200" repeat="indefinite"></a-animation>-->
+        <!--        </a-gltf-model>-->
+        <!--</a-entity>-->
+        <a-entity>
+                <a-gltf-model id = "palm" src = "palm_tree/scene.gltf" visible = "true" position = "-1.56 0 -99.2" scale="1 1 1">
+                        <a-animation attribute="position" dur="70000" from="-1.56 0 -99.2" to="-1.56 0 200" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+        </a-entity>
+        <a-box id="start" onclick="startButton()" position="0 1.8 -4.5" rotation="0 0 0" width="2.5" color="white">
+                <a-text value="START" color="black" scale="3 3 3" position="-1.03 0 .497"></a-text>
+        </a-box>
+        <a-box id="end" onclick="endButton()" position="1.392 1 -5.84" rotation="0 0 0" width="1.6" height=".6" color="#c0f9f2">
+                <a-text value="END" color="black" scale="3 3 3" position="-0.72 0 .497">
+                        <!--<a href="https://aframe.io/docs/0.8.0/primitives/a-sky.html"></a>-->
+                </a-text>
+        </a-box>
+         <a-sphere position="1.581 2.240 -5.87" rotation="-90 0 0" radius=".4" color="#fbff3a" onclick="myFunction()">
+                 <a-animation attribute="position" dur="2350" from="1.581 2.240 -5.87" to="1.581 2.837 -5.87" repeat="indefinite" easing="ease" direction="alternate"></a-animation>
+         </a-sphere>
+    </a-scene>
+    <script src = "index.js"></script>
+  </body>
+
+</html>
